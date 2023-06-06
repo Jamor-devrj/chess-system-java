@@ -26,7 +26,10 @@ public class UI {
 	public static final String ANSI_CYAN_BACKGROUND = "\u001B[46m";
 	public static final String ANSI_WHITE_BACKGROUND = "\u001B[47m";
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5ba53874a72dda0de9cea0d5618644bf217365b9
 	public static void printBoard(ChessPiece[][] pieces) {
 
 		for (int i = 0; i < pieces.length; i++) {
@@ -40,6 +43,7 @@ public class UI {
 		System.out.print("  a b c d e f g h");
 	}
 
+<<<<<<< HEAD
 	
 	private static void printPiece(ChessPiece piece) {  // para imprimir uma peça
 		if(piece == null){
@@ -55,4 +59,21 @@ public class UI {
 	        }
 	        System.out.print(" ");
 		}
+=======
+	private static void printPiece(ChessPiece piece) {
+    	if (piece == null) {
+            System.out.print("-");
+        }
+        else {
+            if (piece.getColor() == Color.WHITE) {
+                System.out.print(ANSI_WHITE + piece + ANSI_RESET);
+            }
+            else {
+                System.out.print(ANSI_YELLOW + piece + ANSI_RESET);
+            }
+        }
+        System.out.print(" ");
+	}
+
+>>>>>>> 5ba53874a72dda0de9cea0d5618644bf217365b9
 }
