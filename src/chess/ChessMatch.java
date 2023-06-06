@@ -41,10 +41,8 @@ public class ChessMatch {
         placeNewPiece('e', 7, new Rook(board, Color.BLACK));
         placeNewPiece('e', 8, new Rook(board, Color.BLACK));
         placeNewPiece('d', 8, new King(board, Color.BLACK));
-<<<<<<< HEAD
+
 	}	
-=======
-	}
->>>>>>> 5ba53874a72dda0de9cea0d5618644bf217365b9
+
 
 }
