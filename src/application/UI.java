@@ -63,12 +63,14 @@ public class UI {
 		if(!chessMatch.getCheckMate()) {
 			System.out.print("Waiting player: " + chessMatch.getCurrentPlayer());
 			if(chessMatch.getCheck()) {
-				System.out.println("\nCHECK!");
+				System.out.println(ANSI_RED_BACKGROUND + "\nCHECK!");
+				System.out.println(ANSI_RESET);
 			}
 		}
 		else {
-			System.out.println("CHECKMATE!");
-			System.out.println(ANSI_CYAN + "Winner: " + chessMatch.getCurrentPlayer());
+			System.out.println(ANSI_RED_BACKGROUND + "CHECKMATE!");
+			System.out.println(ANSI_WHITE_BACKGROUND + ANSI_BLACK + "Winner: " + chessMatch.getCurrentPlayer());
+			System.out.println(ANSI_RESET);
 		}
 	}
 		
