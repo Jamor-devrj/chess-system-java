@@ -5,7 +5,6 @@
 * PLATAFORMA UDEMY
 * LINGUAGEM JAVA
 
-### EM ANDAMENTO...
 
 
 ![](Animacao2.gif)
